@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Search Methods</h1>
+    <h2>String indexOf()</h2>
+    <p> the indexOf() method return the index (position) the first occurance of a string in a string</p>
+    <p>let txt= "please locate where 'locate' occurs!"; </p>
+    <p id="demo-1"></p>
+    <p id="demo-2"></p>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
+    <p id="demo-5"></p>
+    <p id="demo-6"></p>
+    <p id="demo-7"></p>
+    <script>
+        let txt= "please locate where locate occurs! PAIN pain alpain "; 
+        let index = txt.indexOf("locate", 12);
+        let lastIndex= txt.lastIndexOf("locate",12)
+        let search= txt.search(/HE/ig);
+        let match= txt.match(/ain/ig);
+        let matchall= txt.matchAll(/ain/gi);
+        let includes= txt.includes("locate", 27);
+        // const matchArr=
+        document.getElementById("demo-1").innerHTML=index;
+        document.getElementById("demo-2").innerHTML=lastIndex;
+        document.getElementById("demo-3").innerHTML=search;
+        document.getElementById("demo-4").innerHTML= match;
+        document.getElementById("demo-5").innerHTML= Array.from(matchall) +"match all";
+        document.getElementById("demo-6").innerHTML= includes;
+    </script>
+</body>
+</html>

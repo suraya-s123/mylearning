@@ -51,3 +51,17 @@ console.log(padded1)
 
 let pad3= "Other"
 console.log(pad3.padEnd(11," Bite")); // output= Other Bite
+
+
+// Extracting String Characters
+
+
+<button type="button" onclick="document.getElementById('method').div">
+3 methods</button>
+
+
+function myFunction(){
+
+
+document.getElementById("method-3").style.animationName = "myNEWmove";
+}

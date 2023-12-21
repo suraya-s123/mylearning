@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo-1"></p>
+<p id="demo-2"></p>
+<p id="demo-3"></p>
+
+    <script>
+        let tex=`This is a text`;
+        let text= 
+        `He's often called "jhon"
+        hhkkk
+        ujkjkl
+        ami`;
+        let price= 10;
+        let VAT= 0.25;
+        let total = ` total: ${(price* (1+VAT)).toFixed(2)}`;
+        document.getElementById("demo-1").innerHTML=tex;
+        document.getElementById("demo-2").innerHTML=`welcome ${tex}`;
+        document.getElementById("demo-3").innerHTML=total;
+
+        let header= "Template Literals";
+        let tags = ["template literasls", "Javascript", "ese"];
+        let html= ` <h2>${header}</h2><ul>`;
+            for (const x of tags) {
+                html= html +`<li>${x}</li>`;
+            }
+            html = htm +`</ul>`;
+    </script>
+</body>
+</html>
