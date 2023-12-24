@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <p>JavaScript has only one type of number. Numbers can be written with or without decemel</p>
+
+    <p id="demo_1"></p>
+    <p id="demo_2"></p>
+    <p id="demo_3"></p>
+    <p id="demo_4"></p>
+    <p id="demo_5"></p>
+    <p id="demo_6"></p>
+    <p id="demo_7"></p>
+    <button type="button" onclick="myFunction"> Try it</button>
+
+    <script>
+        let x= 2.4;
+        let y= 2.4;
+        let z= x+y;
+        document.getElementById("demo_1").innerHTML= isNaN(z);
+
+
+        let myNumber = 2;
+        let txt = "";
+        while(myNumber != Infinity){
+            myNumber =myNumber * myNumber;
+            txt = txt + myNumber + "<br>";
+            document.getElementById("demo_4").innerHTML= txt;
+        }
+        let number= 34;
+        
+        document.getElementById("demo_5").innerHTML=number.toString(4);
+
+        function myFunction(){
+            let car=["Volvo", "BMW", "ETC"];
+            document.innerHTML=car;
+        }
+myFunction()
+    </script>
+</body>
+</html>
