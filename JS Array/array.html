@@ -6,37 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <h1>JavaScript Arrays</h1>
+    
+
     <p id="demo_1">1</p>
     <p id="demo_2">2</p>
     <p id="demo_3">3</p>
     <p id="demo_4">4</p>
-    <p id="demo_5">5</p>
-    <p id="demo_6">6</p>
-    <p id="demo_7">7</p>
-    <p id="demo_8">8</p>
-    <p id="demo_9">9</p>
-    <p id="demo_10">10</p>
-    <script>
-        const car=["Saab", "Volvo", "BMW"];
-        car [0]="meril";
-        document.write(car [0]+"<br>");
+   
+        const car=["Saab", "Volvo", "BMW", "Banana", "Orange", "Apple", "Mango"];
+       car.forEach(element => {
+            
+        });
+        document.getElementById("demo_1").innerHTML = car;
 
-        const cars = [];
-        cars[0]= "we";
-        cars [1] = "are";
-        cars[2] = "happy"
-        document.write(cars.toString() )
-
-        const carss= new Array("Saab", "Volvo", "BMW");
-
-        function myFunction(p1,p2){
-        return p1 * p2;
-        }
-
-        let x = myFunction(3, 4); 
-        document.getElementById("demo_1").innerHTML= x; 
-
-        
+           
     </script>
 
 

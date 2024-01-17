@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concat</title>
+</head>
+<body>
+    <h1>Concat () In String</h1>
+    <p>The <mark> Concat ()</mark> methods return a neww array by marging two or more values/arrays</p>
+    <!-- <pre>
+        <h2>concat() syntax</h2>
+        <p> The syntax of the concat() method is</p>
+        <p>arr.concat(value1,value2, vale3,....valueN)</p>
+    </pre>
+    <hr>
+    <pre>
+        <h2>concat() Parameters</h2>
+        <p>The <mark>concat()</mark>  method takes in an arbitrary number of arrays and/orvalues as arguments</p>
+    </pre>
+    <hr>
+    <pre>
+        <h2>concat() Return Value</h2>
+        <ul>
+            <li>Returns a newly created array after mergining all arrays/values passed in the argument.</li>
+        </ul>
+        <p>The concat() method first creats a new array with the element of the object on which the method is called. It Then sequentially adds arguments or the elements of arguments(for arrays)</p>
+    </pre>
+    <p><b>Example-1</b></p>
+    <div style="background-color: rgb(138, 152, 165);">
+        <code>p id="fst"></p>
+            //<scripts>
+                let primNumber = [2, 3, 5,7];
+                let evenNumber = [2, 4, 6, 8];
+                let oddNumber = [1, 3, 5, 7, 9];
+                let joinArray = primNumbers.concat(evenNumber, oddNumbers);
+                document.getElementById("fst").innerHTML= joinArray;
+            //</scripts>    
+        </code>
+    </div> -->
+    <!-- <button type = "button" onclick="myFunction()"> try it</button> -->
+    <p id="fst">First</p>
+    <p id="scnd">Second</p>
+    <p id="thrd">Third</p>
+    <p id="4th">4th</p>
+    <p id="5th">5th</p>
+    <p id="6th">6th</p>
+    <hr>
+    <h2>Example 2: Concatenating nested arrays</h2>
+
+
+
+    <script>
+       let oddNumber = [1, 3, 5, 7, 9];
+        document.getElementById("fst").innerHTML = oddNumber;
+       let evenNumber = [2,4,6,8,70,9,33,4];
+       let numberarr = [3, [12, 14], [16, 18,]];
+       
+       let poping =evenNumber.pop();
+       let pushing =evenNumber.push(6);
+       let combindNumber = oddNumber.concat(numberarr, evenNumber);
+       document.getElementById("scnd").innerHTML = combindNumber;
+       document.getElementById("thrd").innerHTML = numberarr.length;
+       document.getElementById("4th").innerHTML = numberarr.reverse(); 
+      // document.getElementById("5th").innerHTML = evenNumber.sort();// i dont know defination
+       document.getElementById("6th").innerHTML = poping;
+
+    </script>    
+</body>
+</html>
