@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Array pop()</h1>
+    
+    <p>
+        <strong>pop() Syntax: </strong>
+        <mark>arr.pop()</mark>
+    </p>
+    <h2>pop() charecter list</h2>
+        <ul>
+            <li> The pop() method removs the last element from an array and return that element.</li>
+            <li>The pop() method dose not have any parameters</li>
+            <li>Return <strong>undefine</strong> if the array is empty.</li>
+            
+        </ul>
+    <h2><strong>Note</strong></h2>
+    <ul>
+        <li>The method changes the original array and its lenth</li>
+        <li>To remove the first element of an array, use the sjavascript Array shift()</li>
+    </ul>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+
+    <p id="demo">0</p> <!-- 100, 50, 7, 1000, 90--> 
+    <p id="demo_1">0</p> <!-- -->
+    <p id="demo_2">0</p>
+    <p id="demo_3">0</p>
+    <p id="demo-4">0</p>
+    <p id="demo-5">0</p>
+    <p id="demo-6">0</p>
+    <script>
+        const points = [100, 50, 7, 1000, 90];
+        document.getElementById("demo").innerHTML=points; // 100, 50, 7, 1000, 90
+
+        function myFunction1(){
+
+          let numericSort = points.sort(function(a,b)
+            {
+                return a - b
+            });
+            document.getElementById("demo_1").innerHTML= numericSort;
+        }
+
+        let sortAlphabetical = points.sort( function (a, b){
+            return b-a
+        });
+        document.getElementById(demo_3).innerHTML=sortAlphabetical;
+
+        function myFunction2(){
+            points.sort(function(a,b){
+                return a - b
+            });
+            document.getElementById("demo_2").innerHTML= points;
+        }
+
+        function myFunction1(){
+            points.sort();
+            document.getElementById("demo-4", "demo-5").innerHTML=points;
+        }
+        function myFunction1(){
+            points.sort(function(a, b){
+                return a - b
+            });
+            document.getElementById("demo-6").innerHTML=[points.length -1];
+        }
+
+        
+    </script>
+</body>
+</html>

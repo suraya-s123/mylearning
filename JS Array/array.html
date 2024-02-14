@@ -14,14 +14,14 @@
     <p id="demo_2">2</p>
     <p id="demo_3">3</p>
     <p id="demo_4">4</p>
-   
-        const car=["Saab", "Volvo", "BMW", "Banana", "Orange", "Apple", "Mango"];
-       car.forEach(element => {
-            
-        });
-        document.getElementById("demo_1").innerHTML = car;
+   <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo_1").innerHTML= myArrayMin(points);
 
-           
+        function myArrayMin(arr){
+            return Math.min.apply(10, 5, arr);
+        }
+        document.getElementById("demo_4").innerHTML = myArrayMin(points);
     </script>
 
 
